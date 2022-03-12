@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Quantico:wght@700&display=swap');
+
+body{
+    background: #eb643b;
+    color: white;
+    font-family: 'Quantico', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+}
+nav div span{
+    margin-left: 50px;
+    font-size: 18px;
+}
+nav h2{
+    font-size: 32px;
+}
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 100px;
+}
+h1, .flex div h1 span{
+    font-size: 70px;
+}
+.left{
+    width: 350px;
+}
+.w{
+    color: rgb(40, 40, 209);
+}
+.d{
+    color: orange;
+}
+button{
+    font-family: 'Quantico', sans-serif;
+    background: red;
+    width: 170px;
+    height: 50px;
+    border-radius: 40px;
+    border: none;
+    font-size: 18px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+}
+.circle1, .circle2, .circle3{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    z-index: -1;
+}
+.circle1{
+    background: rgb(196, 18, 18);
+    top: 280px;
+    left: 400px;
+    opacity: 0.5;
+    animation: circlemove 15s infinite;
+}
+.circle2{
+    background: rgb(35, 35, 122);
+    right: 500px;
+    top: 150px;
+    opacity: 0.5;
+    animation: circlemove2 15s infinite;
+    animation-delay: 2s;
+}
+@keyframes circlemove{
+    0%{
+        left: 400px;
+    }
+    50%{
+        left: 650px;
+    }
+    90%{
+        left: 300px;
+    }
+    100%{
+        top: 280px;
+        left: 400px;
+    }
+}
+@keyframes circlemove2{
+    0%{
+        right: 500px;
+        top: 150px;
+    }
+    50%{
+        right: 200px;
+        top: 50px;
+    }
+    90%{
+        right: 500px;
+        top: 150px;
+    }
+    100%{
+        right: 500px;
+        top: 150px;
+    }
+}
